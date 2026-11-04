@@ -1,16 +1,119 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaw's News</title>
+<style>
+    body {
+        background-color: #f5f5f5;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
 
+    .header {
+        background-color: #011e29;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+
+    .header h2 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .latest-news-section, 
+    .main-article-section, 
+    .pictorial-news-section {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .latest-news-section {
+        width: 250px;
+        text-align: center;
+    }
+
+    .latest-news-section ul {
+        text-align: left;
+        display: inline-block;
+        padding-left: 20px;
+        margin-top: 15px;
+        line-height: 1.6;
+    }
+
+    .main-article-section {
+        width: 450px;
+        text-align: center;
+    }
+
+    .main-article-section p {
+        color: #444;
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+    .pictorial-news-section {
+        width: 250px;
+        text-align: center;
+    }
+
+    .pictorial-news-section img {
+        width: 100%;
+        margin-top: 15px;
+        display: block;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #000;
+    }
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header class="header">
+        <h2>Shaw's News</h2>
+    </header>
+
+    <div class="container">
+        <!-- Latest News -->
+        <div class="latest-news-section">
+            <h3>Latest News Articles</h3>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+
+        <!-- Main Article -->
+        <div class="main-article-section">
+            <h3>Main Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.</p>
+        </div>
+
+        <!-- Pictorial News -->
+        <div class="pictorial-news-section">
+            <h3>Pictorial News</h3>
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News Image 1">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News Image 2">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News Image 3">
+        </div>
+    </div>
 
 </body>
-
 </html>
